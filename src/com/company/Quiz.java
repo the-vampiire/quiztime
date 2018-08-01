@@ -179,6 +179,7 @@ public class Quiz {
                 answer[0] = correctAnswer;
                 incomplete = false;
             } catch (InputMismatchException e) {
+                input.next(); // clear buffer
                 System.out.println("Invalid input for answer");
             }
         } while (incomplete);
