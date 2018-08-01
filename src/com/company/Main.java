@@ -8,6 +8,6 @@ public class Main {
 
         // instantiation version
 //	    Quiz quiz = new Quiz("Test Quiz", input);
-//	    quiz.start(false); // "restart" boolean parameter (false is a fresh start)
+//	    quiz.start(); // "restart" boolean parameter (false is a fresh start)
     }
 }
