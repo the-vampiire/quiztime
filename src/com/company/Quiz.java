@@ -144,6 +144,7 @@ public class Quiz {
     }
 
     private Question makeQuestion(int choice) {
+        // TODO: add additional switch cases here for the remaining Question subclasses
         switch (choice) {
             case 1:
                 return this.buildTrueFalse();
@@ -187,10 +188,18 @@ public class Quiz {
         return answer;
     }
 
+    // TODO: implement a 'getAnswers()' method that functions similarly to the one above
+    // TODO: but is able to accept and store multiple answers
+    // TODO: call this method in the MultiChoice and MultiSelect subclass builder methods
+
     private TrueFalse buildTrueFalse() {
         String description = this.getDescription();
         int answer[] = this.getAnswer();
 
         return new TrueFalse(description, answer, this.input);
     }
+
+    // TODO: create a 'buildMultiChoice()' method
+
+    // TODO: create a 'buildMultiSelect()' method
 }
